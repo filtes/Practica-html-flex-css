@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/Logo Colfiltes Completo2_icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Practivca de FLex Css</title>
+</head>
+<body>
+    <nav>
+                <button class="nav-boton" onclick="accion()">Menú</button>
+                <a class="anclas desaparece" href="#">A</a>
+                <a class="anclas desaparece" href="#">B</a>
+                <a class="anclas desaparece" href="#">C</a>
+                <a class="anclas desaparece" href="#">D</a>
+                <!-- <div class="caja"><a class="anclas" href="#">E</a></div> -->
+        <!-- <div class="caja"><a class="anclas" href="#">F</a></div>
+        <div class="caja"> <a class="anclas" href="#">G</a></div>
+        <div class="caja"><a class="anclas" href="#">H</a></div>
+        <div class="caja"><a class="anclas" href="#">I</a></div>
+        <div class="caja"><a class="anclas" href="#">J</a></div> -->
+    </nav>
+
+<script>
+    function accion() {
+        console.log('Esta funcionando mi boton');
+        var ancla = document.getElementsByClassName('anclas');
+        for (var i = 0; i < ancla.length; i++){
+            ancla[i].classList.toggle('desaparece');
+        }
+    }
+
+</script>
+
+
+
+</body>
+</html>

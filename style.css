@@ -1,0 +1,59 @@
+*{
+    margin: 10px;
+    padding: 10px;
+    /* box-sizing: border-box; */
+}
+
+/* padre */
+nav{
+    background: blueviolet;
+    padding: 2px;
+    margin: 0;
+    display: flex;
+    /* flex-direction: row; */
+    justify-content:space-around;
+
+}
+/* etiquetas hija */
+.anclas, .nav-boton{
+    border: none;
+    display:inline-block;
+    background: salmon;
+    color: #fff;
+    padding: 10px 0px;
+    margin: 2px;
+    text-decoration:none;
+    width: 100%;
+
+}
+.nav-boton{
+    border: none;
+    display:none;
+    background: rgb(63, 79, 110);
+    color: #fff;
+    padding: 10px 0px;
+    margin: 2px;
+    text-decoration:none;
+    width: 100%;
+
+}
+.anclas:hover, .nav-boton:hover{
+    background: rgb(104, 98, 97,0.7);
+}
+
+@media (max-width: 800px){
+    nav{
+        border:rgb(20, 20, 20) solid 5px;
+        background: rgb(29, 27, 26);
+        color: rgb(243, 220, 12);
+        width: 90%;
+        flex-direction: column;
+    }
+    .nav-boton{
+    display:inline-block;
+    }
+    .desaparece{
+        display: none;
+    }
+}
+
